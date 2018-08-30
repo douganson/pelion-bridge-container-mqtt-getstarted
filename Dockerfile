@@ -4,6 +4,7 @@ EXPOSE 22/tcp
 EXPOSE 1883/tcp
 EXPOSE 8234/tcp
 EXPOSE 28520/tcp
+EXPOSE 17362/tcp
 RUN apt-get update
 RUN apt-get -y install default-jre vim locales openssh-server supervisor dnsutils unzip zip mosquitto npm nodejs-legacy sudo
 RUN useradd arm -m -s /bin/bash 
