@@ -1,5 +1,7 @@
 arm PELION Device Shadow bridge for generic MQTT broker (get-started version)
   
+10/16/2018: updated bridge and properties editor
+
 10/10/2018: updated bridge and properties editor - numerous http retry fixes and enhancements
 
 10/10/2018: updated bridge - IoTHub token expiration fix
