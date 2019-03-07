@@ -1,6 +1,8 @@
 arm PELION Device Shadow bridge for generic MQTT broker (get-started version)
   
-03/07.2019: updated default MQTT nodeflow
+03/07/2019: refresh builds
+
+03/07/2019: updated default MQTT nodeflow
 
 01/05/2019: docker build trigger update
 
