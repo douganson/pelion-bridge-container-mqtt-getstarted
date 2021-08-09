@@ -7,7 +7,10 @@ EXPOSE 28520/tcp
 EXPOSE 17362/tcp
 RUN apt-get update
 RUN apt-get -y install tzdata
-RUN apt-get -y install openjdk-8-jre vim locales openssh-server supervisor dnsutils unzip zip ntp mosquitto npm nodejs sudo git
+RUN apt-get -y install openjdk-8-jre vim locales openssh-server supervisor dnsutils unzip zip ntp mosquitto npm sudo git curl dirmngr apt-transport-https lsb-release ca-certificates build-essential
+RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+RUN apt-get update
+RUN apt-get -y install nodejs 
 RUN useradd arm -m -s /bin/bash 
 RUN mkdir -p /home/arm
 RUN chown arm.arm /home/arm
